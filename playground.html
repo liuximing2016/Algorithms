@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学算法</title>
+    <script src="./Heap.js"></script>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          let tmp = [];
+          let arr = [];
+          for(let i =0; i < 15; i++) {
+            tmp[i] = Math.floor(Math.random()*100+1);
+          }
+          console.log('tmp', tmp);
+          heapify(tmp);
+          console.log('tmp', tmp);
+          // for(let i = 0; i< 15; i++) {
+          //   insert(arr, tmp[i]);
+          // }
+          for(let i = 14; i >= 0; i--) {
+            arr[i] = (extractMax(tmp));
+          }
+          console.log('arr', arr);
+        });
+    </script>
+</body>
+</html>
