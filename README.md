@@ -1,2 +1,2 @@
 # Algorithms
-js算法练习
+js算法
